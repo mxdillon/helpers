@@ -4,8 +4,8 @@ import(
     "testing"
 )
 
-// TestIsIn ensures that various permutations of inputs return the desired tuple.
-func TestIsIn(t *testing.T) {
+// TestIsInString ensures that various permutations of inputs return the desired tuple.
+func TestIsInString(t *testing.T) {
 	type input struct {
 		b []byte
         s string
@@ -28,7 +28,7 @@ func TestIsIn(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			actualBool, actualInt := IsIn(tt.i.b, tt.i.s)
+			actualBool, actualInt := IsInString(tt.i.b, tt.i.s)
             if actualBool != tt.e.b{
 				t.Errorf("boolean incorrect, want %v, got %v", tt.e.b, actualBool)
 			}
