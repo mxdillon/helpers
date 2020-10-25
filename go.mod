@@ -1,3 +1,3 @@
-module github.com/mxdillon/go-helpers
+module github.com/mxdillon/helpers
 
 go 1.15

@@ -1,7 +1,7 @@
-package go-helpers
+package helpers
 
 
-// I sIn checks whether an element is present within a string. Change the types to slices as required.
+// IsIn checks whether an element is present within a string. Change the types to slices as required.
 // Returns a bool and the index of where the match occured (which can be useful).
 func IsIn(b byte, s string) (bool, int) {
     for i := range s {
